@@ -8,7 +8,7 @@ if (($files = Mage::getModel('staempfli_productattachment/file')->getFilesByProd
     <div id="tab-mediathek" class="tabs_content">
         <?php foreach ($files as $file): ?>
             <div class="mediathek">
-                <i class="fa fa-file-<?=$file['type']; ?>-o fa-2x"></i> <a href="<?= $dir.DS.$file['path']; ?>"><?= $file['description'];?></a>
+                <i class="fa fa-file-<?=$file['type']; ?>-o fa-2x"></i> <a target="_blank" href="<?= $dir.DS.$file['path']; ?>"><?= $file['description'];?></a>
             </div>
         <?php endforeach; ?>
     </div>
